@@ -12,8 +12,14 @@ class _InputPageState extends State<InputPage> {
   String _name = '';
   String _email = '';
   String _password = '';
+  // Date Picker
   String _date = '';
   TextEditingController _controllerDate = new TextEditingController();
+  // Dropdonw list
+  List<String> nbaPlayers = ['Michael Jordan', 'Charles Barkley', 'Scottie Pipen',
+    'Reggie Miller', 'John Stockton', 'Karl Malone', 'Shaquille O\'Neal', 'Kobe Bryan',
+    'Magic Johnson', 'Bill Russell', 'Larry Bird', 'Patrick Ewing', 'Wilt Chamberlain'];
+  String _playerSelected = 'Michael Jordan';
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +37,8 @@ class _InputPageState extends State<InputPage> {
          _createPassword(),
          Divider(),
          _createDate(context),
+         Divider(),
+         _createDropdown(),
          Divider(),
          _createPerson(),
         ],
@@ -74,6 +82,7 @@ class _InputPageState extends State<InputPage> {
     return ListTile(
       title: Text('This is your name: $_name'),
       subtitle: Text('Email: $_email'),
+      //trailing: Text(_playerSelected),
     );
   }
 
@@ -182,4 +191,35 @@ class _InputPageState extends State<InputPage> {
     }
   }
 
+  Widget _createDropdown() {
+    final dropdown = DropdownButton(
+      value: _playerSelected,
+      items: getListofPlayers(),
+      onChanged: (option){
+        setState(() {
+          _playerSelected = option;
+        });
+      },
+    );
+
+    return Row(
+      children: <Widget>[
+        Icon(Icons.access_time),
+        SizedBox(width: 25.0,),
+        dropdown
+      ],
+    );
+  }
+
+  List<DropdownMenuItem<String>> getListofPlayers() {
+    List<DropdownMenuItem<String>> list = [];
+
+    nbaPlayers.forEach((player) {
+      list.add(DropdownMenuItem(
+        child: Text(player),
+        value: player,
+      ));
+    });
+    return list;
+  }
 }
