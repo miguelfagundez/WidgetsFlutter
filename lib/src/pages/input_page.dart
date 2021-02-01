@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+
 class InputPage extends StatefulWidget {
   @override
   _InputPageState createState() => _InputPageState();
@@ -170,6 +171,7 @@ class _InputPageState extends State<InputPage> {
       initialDate: new DateTime.now(),
       firstDate: new DateTime(2018),
       lastDate: new DateTime(2025),
+      locale: Locale('es'),
     );
 
     if (time != null){
@@ -179,4 +181,5 @@ class _InputPageState extends State<InputPage> {
       });
     }
   }
+
 }
