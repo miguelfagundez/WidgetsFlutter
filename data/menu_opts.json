@@ -30,6 +30,16 @@
             "ruta" : "slider",
             "icon" : "slider",
             "texto": "Slider"
+        },
+        {
+            "ruta" : "checkbox",
+            "icon" : "checkbox",
+            "texto": "Checkbox - Switches"
+        },
+        {
+            "ruta" : "list",
+            "icon" : "list",
+            "texto": "List"
         }
     ]
 }
