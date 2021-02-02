@@ -81,7 +81,7 @@ class _ListViewPageState extends State<ListViewPage> {
 
     _isLoading = true;
     setState(() { });
-    final duration = Duration(seconds: 2);
+    final duration = Duration(seconds: 3);
     return await new Timer(duration, response);
   }
 
