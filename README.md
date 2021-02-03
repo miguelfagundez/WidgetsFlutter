@@ -2,6 +2,11 @@
 
 A new Flutter application.
 
+<p align = "center">
+<img src="/images/01.png" width="200"> <img src="/images/02.png" width="200"> <img src="/images/03.png" width="200"> <img src="/images/06.png" width="200">
+  <img src="/images/04.png" width="200"> <img src="/images/05.png" width="200">
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
