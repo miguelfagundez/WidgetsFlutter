@@ -1,6 +1,6 @@
 # flutter_widgets
 
-A new Flutter application.
+Testing some basic widgets in Flutter.
 
 <p align = "center">
 <img src="/images/01.png" width="200"> <img src="/images/02.png" width="200"> <img src="/images/03.png" width="200"> <img src="/images/06.png" width="200">
