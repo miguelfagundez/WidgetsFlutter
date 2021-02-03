@@ -48,7 +48,7 @@ class _SliderPageState extends State<SliderPage> {
 
   Widget _createImage() {
     final image = Image(
-      image: NetworkImage('https://lh3.googleusercontent.com/proxy/LRaobjUUmpoBj81Cy6W0_9RcVtC11fWF1E9_IjmxrbmSuclZoab4T_vDESYjZ6SyXser6xq0yRlEbBmMRCwej-HsIIr3kHiUryHs91bSVDtatiadvA'),
+      image: NetworkImage('https://www.vhv.rs/dpng/d/115-1159913_transparent-michael-jordan-clipart-png-download-michael-jordan.png'),
       width: _valueSlider,
       fit: BoxFit.contain,
     );
